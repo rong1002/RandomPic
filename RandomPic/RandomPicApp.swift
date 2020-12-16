@@ -11,7 +11,7 @@ import SwiftUI
 struct RandomPicApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(urlString: "https://picsum.photos/200/300")
         }
     }
 }
