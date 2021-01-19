@@ -49,7 +49,7 @@ class ImagePicker: ObservableObject {
     @Published var data:Data?
     
     var urlString: String = "https://picsum.photos/200/300"
-    @State var change:Int?
+
     init(urlString:String) {
         guard let url = URL(string: urlString) else { return }
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
